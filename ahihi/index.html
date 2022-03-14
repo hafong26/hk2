@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .sidebar {
+            list-style: none;
+            padding-left: 0;
+            float: left;
+            background: skyblue;
+            width: 1.888em;
+            height: 100vh;
+            font-size: 25px;
+            transition: width .5s;
+            overflow: hidden;
+        }
+        
+        .sidebar:hover {
+            width: 10em;
+        }
+        
+        .sidebar a {
+            display: block;
+            color: white;
+            width: 10em;
+        }
+        
+        .sidebar a:hover {
+            background: white;
+            color: black;
+        }
+        
+        .sidebar i {
+            padding: 10px;
+        }
+        
+        .sidebar span {
+            padding-left: 10px;
+        }
+        /* main */
+        
+        .main {
+            border: 1px solid black;
+            height: 100vh;
+            float: left;
+            padding: 20px;
+        }
+        
+        .main>div {
+            display: flex;
+        }
+        
+        .main>div>a {
+            background: skyblue;
+            display: block;
+            font-size: 20px;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            flex: 1;
+            box-shadow: 8px 8px 5px;
+        }
+        
+        .main>div>a:hover {
+            background: rgb(0, 183, 255);
+            color: White;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="sidebar">
+        <li><a href="#"><i class='bx bx-home'></i><span>Trang chủ</span></a></li>
+        <li><a href="#"><i class='bx bx-user'></i><span>Tài khoản</span></a></li>
+        <li><a href="#"><i class='bx bx-bell'></i><span>Thông báo</span></a></li>
+        <li><a href="#"><i class='bx bx-search'></i><span>Tìm kiếm</span></a></li>
+        <li><a href="#"><i class='bx bx-help-circle'></i><span>Trợ giúp</span></a></li>
+        <li><a href="#"><i class='bx bx-log-out'></i><span>Đăng xuất</span></a></li>
+    </ul>
+    <div class="main">
+        <div class="a">
+            <a href="webpages/a-link.html">A-link</a>
+
+        </div>
+        <div class="b">
+            <a href="webpages/battle.html">Battle</a>
+            <a href="webpages/box-index.html">Box-index</a>
+            <a href="webpages/button.html">Button</a>
+
+        </div>
+        <div class="c">
+            <a href="webpages/cunghoangdao.html">Cung Hoàng Đạo</a>
+        </div>
+        <div class="f">
+            <a href="webpages/filter.html">Filter</a>
+            <a href="webpages/font-family.html">Font-family</a>
+
+        </div>
+        <div class="h">
+            <a href="webpages/header.html">Header</a>
+        </div>
+        <div class="m">
+            <a href="webpages/menu.html">Menu</a>
+            <a href="webpages/menuX2.html">MenuX2</a>
+
+        </div>
+        <div class="p">
+            <a href="webpages/position.html">Position</a>
+
+        </div>
+        <div class="s">
+            <a href="webpages/scrollbar.html">Scrollbar</a>
+            <a href="webpages/sidebar.html">Sidebar</a>
+            <a href="webpages/svg-and-defs.html">Svb-and-defs</a>
+
+
+        </div>
+        <div class="v">
+            <a href="webpages/visibility.html">Visibility</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        body {
+            background: linear-gradient(to right top, #cd00cd, indigo);
+
+        }
+
+        header {
+            background: purple;
+            position: relative;
+
+        }
+
+        header * {
+            color: white;
+            font-family: arial;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin-left: 20px;
+            text-shadow: 0 0 5px;
+            color: red;
+        }
+
+        .sign>a {
+            border: 1px solid white;
+            padding: 10px 17px;
+            font-size: 20px;
+            margin-left: 2px;
+        }
+
+        .sign>a:hover {
+            background: violet;
+        }
+
+        /* Arrow Effect */
+        .btn-arrow {
+            transition: all .8s;
+        }
+
+        .btn-arrow:hover {
+            padding-right: 1.5em;
+        }
+
+        .span-arrow {
+            position: relative;
+        }
+
+        .span-arrow:after {
+            content: '\00bb';
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            transition: .8s;
+        }
+
+        .btn-arrow:hover .span-arrow:after {
+            right: -0.7em;
+            opacity: 1;
+        }
+
+        /* icon-menu */
+        .menu {
+            background: white;
+            width: 55px;
+            height: 45px;
+            position: relative;
+        }
+
+        .menu:before,
+        .menu:after {
+            content: '';
+            width: 100%;
+            height: 9px;
+            background: purple;
+            position: absolute;
+            top: 9px;
+        }
+
+        .menu:after {
+            top: 27px;
+        }
+
+        .menu:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a class="menu"></a>
+                <span>vlxx.com</span>
+            </div>
+            <div class="sign">
+                <a href="#" class="btn-arrow"><span class="span-arrow">Đăng nhập</span></a>
+                <a href="#">?</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

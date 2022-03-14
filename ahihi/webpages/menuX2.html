@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(to right, lightblue, lightgreen, lightblue, lightgreen, lightblue);
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .menu-ngang {
+            background: blue;
+            text-align: center;
+        }
+
+
+        .menu-ngang>ul>li {
+            display: inline-block;
+            position: relative;
+            background: transparent;
+
+        }
+
+        li {
+            background: black;
+            width: 200px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            font-size: 27px;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+
+        a:hover {
+            background: white;
+            color: black;
+        }
+
+        .menu-list {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 70px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .menu-list li {
+            background: #aaa;
+        }
+
+        div>ul>li:hover .menu-list,
+        div>ul>li:hover .menu-list2 {
+            display: block;
+        }
+
+        /*  */
+        .menu-doc li {
+            position: relative;
+            background: black;
+            border-bottom: 1px solid white;
+            font-size: 25px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .menu-doc li:last-child {
+            border: none;
+        }
+
+        .menu-list2 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 200px;
+            border-left: 1px solid white;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-ngang">
+        <ul>
+            <li><a href="#">Item 1</a>
+                <ul class="menu-list">
+                    <li><a href="#">Item 1.a</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 2</a>
+                <ul class="menu-list">
+                    <li><a href="#">Item 2.a</a></li>
+                    <li><a href="#">Item 2.b</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 3</a>
+                <ul class="menu-list">
+                    <li><a href="#">Item 3.a</a></li>
+                    <li><a href="#">Item 3.b</a></li>
+                    <li><a href="#">Item 3.c</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 4</a>
+                <ul class="menu-list">
+                    <li><a href="#">Item 4.a</a></li>
+                    <li><a href="#">Item 4.b</a></li>
+                    <li><a href="#">Item 4.c</a></li>
+                    <li><a href="#">Item 4.d</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-doc">
+        <ul>
+            <li><a href="#">Item 1</a>
+                <ul class="menu-list2">
+                    <li><a href="#">Item 1.a</a></li>
+                    <li><a href="#">Item 1.b</a></li>
+                    <li><a href="#">Item 1.c</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Item 2</a>
+                <ul class="menu-list2">
+                    <li><a href="#">Item 2.a</a></li>
+                    <li><a href="#">Item 2.b</a></li>
+                    <li><a href="#">Item 2.c</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 3</a>
+                <ul class="menu-list2">
+                    <li><a href="#">Item 3.a</a></li>
+                    <li><a href="#">Item 3.b</a></li>
+                    <li><a href="#">Item 3.c</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 4</a>
+                <ul class="menu-list2">
+                    <li><a href="#">Item 4.a</a></li>
+                    <li><a href="#">Item 4.b</a></li>
+                    <li><a href="#">Item 4.c</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

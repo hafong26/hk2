@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../css/B3f_6.css">
+    <script language="javascript">
+        function KT_DuLieu() {
+            var flag_a;
+            var hsa = document.getElementById("th_hs_a");
+            if (hsa.value == "") {
+                flag_a = false;
+                alert("Chưa nhập hệ số a.");
+                hsa.focus();
+            } else {
+                var regex = /([a-zA-Z])/;
+                if (regex.test(hsa.value)) {
+                    flag_a = false;
+                    alert('Vui lòng nhập ký tự số của a.');
+                    hsa.focus();
+                } else {
+                    flag_a = true;
+                }
+            }
+            var flag_b;
+            var hsb = document.getElementById("th_hs_b");
+            if (hsb.value == "") {
+                flag_b = false;
+                alert("Chưa nhập hệ số b.");
+                hsb.focus();
+            } else {
+                var regex = /([a-zA-Z])/;
+                if (regex.test(hsb.value)) {
+                    flag_b = false;
+                    alert('Vui lòng nhập ký tự số của b.');
+                    hsb.focus();
+                } else {
+                    flag_b = true;
+                }
+            }
+
+            var flag_c;
+            var hsc = document.getElementById("th_hs_c");
+            if (hsb.value == "") {
+                flag_c = false;
+                alert("Chưa nhập hệ số c.");
+                hsc.focus();
+            } else {
+                var regex = /([a-zA-Z])/;
+                if (regex.test(hsc.value)) {
+                    flag_c = false;
+                    alert('Vui lòng nhập ký tự số của c.');
+                    hsc.focus();
+                } else {
+                    flag_c = true;
+                }
+            }
+            return (flag_a && flag_b && flag_a);
+        }
+        function giai_PT_bac2() {
+            kt = KT_DuLieu();
+            if (kt) {
+                var hsa = document.getElementById("th_hs_a");
+
+                var a = parseInt(hsa.value);
+                if (a != 0) {
+                    var hsb = document.getElementById("th_hs_b");
+                    var hsc = document.getElementById("th_hs_c");
+
+                    var b = parseInt(hsb.value);
+                    var c = parseInt(hsc.value);
+                    var delta;
+                    delta = b * b - 4 * a * c;
+                    var nghiem;
+                    if (delta > 0) {
+                        var x1, x2;
+                        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                        nghiem = "PT có 2 nghiệm: " + "\n" + " x1= " + x1 + "\n" + " x2= " + x2;
+                    } else if (delta == 0) {
+                        var x;
+                        x = -b / (2 * a);
+                        nghiem = "PT có nghiệm kép : " + "\n" + " x1= x2 = " + x;
+                    } else {
+                        nghiem = "PT vô nghiệm.";
+                    }
+                    //ghi kết quả ra trình duyệt
+                    var kq = document.getElementById("th_kq");
+                    kq.value = nghiem;
+
+                } else {
+                    alert('Không phải PT bậc 2.');
+                }
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../B3_TH.html">Trở về trang trước</a>
+    </header>
+    <main>
+        <form class="pos-cen" style="min-width: 600px;">
+            <h3>phương trình bậc 2</h3>
+            <div>
+                <input type="text" size="10" id="th_hs_a"> <span> X<sup>2</sup> +</span>
+                <input type="text" size="10" id="th_hs_b"> <span> X +</span>
+                <input type="text" size="10" id="th_hs_c"> <span> = 0</span>
+            </div>
+            <div>
+                <span>Kết quả:</span>
+                <textarea cols="44" rows="14" id="th_kq" readonly="none"></textarea>
+            </div>
+            <div class="button">
+                <button type="button" onclick="giai_PT_bac2()">Tính</button>
+                <button type="reset">Làm lại</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

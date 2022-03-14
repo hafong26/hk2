@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .main>a {
+            margin: 20px;
+        }
+
+        div div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background: red;
+        }
+
+
+
+        #box2 {
+            visibility: hidden;
+            background: yellow;
+        }
+
+        #box2:target {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <a href="#box2">
+            <div id="box1"></div>
+        </a>
+        <a href="#">
+            <div id="box2"></div>
+        </a>
+
+    </div>
+</body>
+
+</html>

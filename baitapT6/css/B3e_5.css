@@ -1,0 +1,189 @@
+@import url(bootstrap.css);
+:root {
+    --bg-color: rgba(221, 160, 221, 0.534);
+    --bg-btn: pink;
+    --bg-btn-hover: violet;
+    --text-color: black;
+}
+
+* {
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.app {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    padding: 10 20;
+    background: var(--bg-color);
+}
+
+header {
+    justify-content: space-between;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav li a {
+    color: var(--text-color);
+}
+
+.search * {
+    font-size: 15px;
+    height: 30px;
+}
+
+.search input {
+    width: 300px;
+}
+
+.search input::placeholder {
+    padding-left: 5px;
+}
+
+.btn {
+    background: var(--bg-btn);
+    width: 70px;
+    height: 32px;
+    font-family: times;
+}
+
+.btn:hover {
+    background: var(--bg-btn-hover);
+    cursor: pointer;
+}
+
+/*  */
+
+.banner {
+    height: 260px;
+    position: relative;
+}
+
+.banner:after {
+    content: 'eropi.com.vn';
+    font: 70px Courier;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+    font-size: 25px;
+}
+
+/*  */
+
+main {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.left ul {
+    margin: 15px 5px;
+}
+
+.left li {
+    padding: 10px;
+    background: var(--bg-color);
+    text-transform: uppercase;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.left li:hover {
+    background: var(--bg-btn);
+    cursor: pointer;
+}
+
+/*  */
+
+.right {
+    flex: 3;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    height: max-content;
+    border: 1px solid black;
+}
+
+.col img {
+    height: 270px;
+}
+
+.col p {
+    margin: 5px;
+}
+
+.col button {
+    margin: 12px;
+    margin-left: 70%;
+}
+
+/*  */
+
+.more {
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: max-content;
+    border: 1px solid black;
+    background-color: var(--bg-color);
+}
+
+.more:hover {
+    background-color: var(--bg-btn-hover);
+}
+
+.more a {
+    font-size: 25px;
+    padding: 7 20;
+    display: block;
+}
+
+/*  */
+
+footer div {
+    flex: 1;
+}
+
+.col3 {
+    display: flex;
+}
+
+.col3 img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}

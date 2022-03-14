@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../css/B3c_3.css">
+    <title>Định dạng bảng biểu bằng CSS</title>
+    <style>
+        body {
+            background: #ffedca;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 25px;
+            margin: auto;
+            width: 1000px;
+            line-height: 40px;
+            margin-top: 100px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        .haha {
+            width: 37%;
+        }
+
+        .row_one {
+            text-align: right;
+            background: red;
+            color: white;
+        }
+
+        .row_two {
+            background: pink
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+
+        ul {
+            list-style: url(../images/bullet1.gif);
+            color: red;
+        }
+
+
+
+        ul ul {
+            list-style: disc;
+        }
+
+        ul ol {
+            list-style: decimal;
+        }
+
+        i {
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body class="c4">
+    <header>
+        <a href="../B3_TH.html">Trở về trang trước</a>
+    </header>
+    <table>
+        <tr>
+            <th colspan="2" class="row_one">Công nghệ dầu gội dưỡng tóc mới</th>
+            <th class=" haha" rowspan="2" style="padding:0 15px">
+                <img src="../images/DoubleRich.jpg" alt="">
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" class="row_two">Toả sáng cùng DOUBLE RICH</th>
+        </tr>
+        <tr>
+            <td class="haha">
+                <ul>
+                    <li><b>Sản phẩm khuyến mãi</b>
+                        <dd>Dầu gội Double Rich mới 200ml, 400 có tem khuyến mãi.</dd>
+                    </li>
+                    <li><b>Đối tượng tham gia</b>
+                        <ul>
+                            <li>Áp dụng cho tất cả người dùng cuối cùng mua sản phẩm khuyến mãi.</li>
+                            <li>Chương trình không áp dụng cho nhân viên nhà phân phối.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </td>
+            <td colspan="2">
+                <ul>
+                    <li><b>Cách thức nhận giải</b>
+                        <ol>
+                            <li><i>Giải khuyến khích: </i>Khách hàng đổi quà tại các cửa hàng trên toàn quốc.</li>
+                            <li><i>Giải đặc biệt, nhất, nhì: </i>Khách hàng cắt phần mã vạch trên mỗi chai dầu gội có
+                                khuyến mãi và gửi kèm phiều trúng thưởng về văn phòng công ty.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

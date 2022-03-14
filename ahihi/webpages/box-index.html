@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index-new.css">
+    <style>
+        :root {
+            --bg-color1: red;
+            --bg-color2: orange;
+            --bg-color3: yellow;
+            --bg-color4: lime;
+            --bg-color5: green;
+            --bg-color6: blue;
+            --bg-color7: blueviolet;
+            --bg-color8: purple;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            background: black;
+        }
+
+        .header ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .header li {
+            display: inline-block;
+        }
+
+        .header a {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            min-width: 100px;
+
+        }
+
+        .box {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            height: calc(100% - 50px);
+            display: none;
+        }
+
+        li:nth-of-type(1):hover {
+            background: var(--bg-color1);
+        }
+
+        li:nth-of-type(2):hover {
+            background: var(--bg-color2);
+        }
+
+        li:nth-of-type(3):hover {
+            background: var(--bg-color3);
+        }
+
+        li:nth-of-type(4):hover {
+            background: var(--bg-color4);
+        }
+
+        #ani-01:target,
+        #ani-02:target,
+        #tranform:target,
+        #transition:target {
+            display: block;
+        }
+
+        /* Box 01 */
+        #ani-01>div {
+            background: red;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+            border: 1px solid black;
+        }
+
+        #ani-01>div>div {
+            background: black;
+            width: 200px;
+            height: 200px;
+            animation: move linear infinite 1.5s;
+        }
+
+        @keyframes move {
+            to {
+                transform: translate(573px, 0);
+            }
+        }
+
+        /* Box 02 */
+        .stick img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .stick {
+            padding: 50px;
+            margin: 50px;
+            border: 1px solid black;
+            font-size: 50px;
+        }
+
+        .stick * {
+            animation: ball 0.5s infinite;
+            margin-right: 50px;
+        }
+
+
+
+
+
+
+
+
+        @keyframes ball {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, -50px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#ani-01">Animation</a></li>
+            <li><a href="#ani-02">Button</a></li>
+            <li><a href="#tranform">Tranform</a></li>
+            <li><a href="#transition">Transition</a></li>
+        </ul>
+    </div>
+    <div class="box" id="ani-01">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="box" id="ani-02">
+        <div class="stick">
+            <img src="../images/running-stick-figure.png" class="sticker">
+            <i class='bx bx-football'></i>
+            <img src="../images/running-stick-figure.png" class="sticker">
+            <i class='bx bx-football'></i>
+            <img src="../images/running-stick-figure.png" class="sticker">
+            <i class='bx bx-football'></i>
+            <img src="../images/running-stick-figure.png" class="sticker">
+            <i class='bx bx-football'></i>
+        </div>
+    </div>
+    <div class="box" id="tranform">ccccccc</div>
+    <div class="box" id="transition">ddddddddd</div>
+</body>
+
+</html>

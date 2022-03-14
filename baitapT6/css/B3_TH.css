@@ -1,0 +1,45 @@
+@import url(style.css);
+body {
+    background: url(../images/background.jpg)
+}
+
+header::before {
+    content: 'Thiết kế trang web';
+    color: black;
+}
+
+table {
+    margin: auto;
+    min-width: 600px;
+    font-size: 18px;
+}
+
+caption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td:first-of-type {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    line-height: 30px;
+}
+
+a:hover {
+    color: red;
+}

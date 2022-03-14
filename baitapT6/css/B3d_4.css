@@ -1,0 +1,182 @@
+@import url(style.css);
+body {
+    background: url(../images/background4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    box-shadow: 0 10px 100px black;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.753);
+}
+
+/* Form 02 */
+
+.d2 .form {
+    padding: 0 50 20 50;
+}
+
+/* Form 02 */
+
+.form .row {
+    display: flex;
+    width: 400px;
+    margin: 30px 0;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form h2 {
+    font-size: 40px;
+}
+
+.form input {
+    flex: 1;
+    background: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.d1 input {
+    padding: 15px;
+}
+
+.d2 .form input {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+input::placeholder {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.submit {
+    flex-direction: column;
+}
+
+.submit>button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    padding: 10px 30px;
+    border: none;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.submit>button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.submit>p {
+    margin: 5px 0;
+    font-size: 20px;
+    font-family: Times;
+}
+
+.submit>p>a {
+    color: blue;
+}
+
+.submit>p>a:hover {
+    color: red;
+}
+
+/* Sign up */
+
+.inline {
+    flex-direction: column;
+    display: flex;
+    margin-top: 50px;
+}
+
+.inline .row {
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 0 0 25 0;
+}
+
+.form .row2 input[type="radio"] {
+    margin: 0 5px;
+}
+
+.form .row select {
+    margin-top: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form .row input[type="file"] {
+    padding: 5px;
+    border: dotted 1px black;
+}
+
+/* D3 */
+
+.d3 .row {
+    display: flex;
+    padding-left: 20px;
+}
+
+.d3 .col {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.d3 h2 {
+    margin: 0;
+    font-family: arial;
+    text-decoration: underline;
+}
+
+.d3 input {
+    margin: 5px;
+}
+
+.d3 input[type="text"] {
+    border: 1px solid black;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.d3 .sum {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    width: 434px;
+}
+
+.d3 .submit {
+    flex-direction: row;
+}
+
+.d3 .sum input {
+    position: relative;
+}
+
+.d3 .sum input::placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.d3 .submit button {
+    margin: 0 15px;
+    padding: 10px;
+}

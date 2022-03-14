@@ -1,0 +1,53 @@
+@import url(bootstrap.css);
+:root {
+    --bg-head: #2c3e50;
+    --color-head: white;
+    --red: #e74c3c;
+    --blue: #2980b9;
+}
+
+body {
+    font-size: 25px;
+}
+
+main {
+    padding: 0 15px;
+}
+
+/* Header */
+
+header {
+    background: var(--bg-head);
+    color: var(--color-head);
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 72px;
+}
+
+header>a {
+    color: var(--color-head);
+    float: left;
+}
+
+header>a:hover {
+    color: red;
+}
+
+header:after {
+    content: 'Nguyễn Văn Hào | 2030140120 | 20CDTKW01';
+    word-spacing: 5px;
+}
+
+header:before {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

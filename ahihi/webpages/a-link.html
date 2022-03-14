@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+    <style>
+        :root {
+            --ok: lime;
+            --ko: tomato;
+            --st: skyblue;
+            --txt: black;
+        }
+
+        div {
+            border: 1px solid black;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            border: 1px solid black;
+            background: var(--ko);
+            color: var(--txt);
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        button:first-child {
+            background: var(--st);
+        }
+
+        .s1 button[class] {
+            background: var(--ok);
+        }
+
+        .s2 button[type="menu"] {
+            background: var(--ok);
+        }
+
+        /* chứa từ "thaibai" */
+        .s3 button[class~="thatbai"] {
+            background: var(--ok);
+        }
+
+        /* bắt đầu bằng từ "btn", kitu:"-" */
+        .s4 button[class|="btn"] {
+            background: var(--ok);
+        }
+
+        /* bắt đầu bằng từ "btn" */
+        .s5 button[class^="btn"] {
+            background: var(--ok);
+        }
+
+        /* kết thúc bằng từ, kí tự "t" */
+        .s6 button[type$="t"] {
+            background: var(--ok);
+        }
+
+        /* chứa từ, kí tự "u" */
+        .s7 button[type*="u"] {
+            background: var(--ok);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="s1">
+        <button>s1 button[class] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s2">
+        <button>s2 button[type="menu"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s3">
+        <button>~s3 button[class~="thatbai"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s4">
+        <button>|s4 button[class|="btn"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s5">
+        <button>^s5 button[class^="btn"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s6">
+        <button>$s6 button[type$="t"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+    <div class="s7">
+        <button>*s7 button[type*="u"] {</button>
+        <button type="button">1</button>
+        <button type="menu" class="btn-success thanhcong">2</button>
+        <button type="reset" class="btn-warn canhbao">3</button>
+        <button type="submit" class="btnerror thatbai">4</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        .filter {
+            background: url(../images/lion.jpg);
+            background-size: cover;
+            background-position: center;
+            border: 5px solid lime;
+            width: 50%;
+            height: 60vh;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: filter 10s infinite;
+        }
+
+        @keyframes filter {
+            0% {
+                filter: none;
+            }
+
+            10% {
+                filter: blur(5px);
+                top: 3%;
+            }
+
+            20% {
+                filter: brightness(150%);
+                top: 6%;
+            }
+
+            30% {
+                filter: contrast(30%);
+                top: 9%;
+            }
+
+            40% {
+                filter: drop-shadow(-5px -5px 10px);
+                top: 12%;
+            }
+
+            50% {
+                filter: grayscale(100%);
+                top: 15%;
+
+            }
+
+            60% {
+                filter: hue-rotate(100deg);
+                top: 18%;
+            }
+
+            70% {
+                filter: invert(100%);
+                top: 21%;
+            }
+
+            80% {
+                filter: opacity(60%);
+                top: 24%;
+            }
+
+            90% {
+                filter: saturate(300%);
+                top: 27%;
+            }
+
+            100% {
+                filter: sepia(60%);
+                top: 30%;
+            }
+        }
+
+        .float {
+            height: 100vh;
+            background: midnightblue;
+            float: left;
+            width: 15%;
+        }
+
+        .main {
+            width: 70%;
+            background: transparent;
+            text-align: center;
+            font-size: 25px;
+            letter-spacing: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 5px 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter"></div>
+    <div class="hidden"></div>
+    <div class="float left"></div>
+    <div class="float main">
+        <p>filter:blur(5px);</p>
+        <p>filter:brightness(150%);</p>
+        <p>filter:contrast(30%);</p>
+        <p>filter:drop-shadow(-5px -5px 10px);</p>
+        <p>filter:grayscale(100%);</p>
+        <p>filter:hue-rotate(100deg);</p>
+        <p>filter:invert(100%);</p>
+        <p>filter:opacity(60%);</p>
+        <p>filter:saturate(300%);</p>
+        <p>filter:sepia(60%);</p>
+    </div>
+    <div class="float right"></div>
+</body>
+
+</html>

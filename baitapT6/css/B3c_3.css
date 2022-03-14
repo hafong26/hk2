@@ -1,0 +1,133 @@
+@import url(style.css);
+/* Unit */
+
+header::before {
+    content: 'Bài 3.3: Định dạng bảng biểu bằng css';
+    color: black;
+}
+
+/* C1 */
+
+.c1 {
+    background: url(../images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.c1 table {
+    background: url(../images/bg-atm.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: auto;
+    height: 250px;
+}
+
+.c1 td {
+    border: none;
+}
+
+.c1 td:first-child {
+    text-align: right;
+    width: 280px;
+}
+
+.c1 td:last-child {
+    text-indent: 10px;
+    width: 320px;
+}
+
+/* C2 */
+
+.c2 {
+    background: url(../images/bg-food.jpg);
+}
+
+.c2 td {
+    border: none;
+}
+
+.c2>table {
+    width: 100%;
+}
+
+.c2 .left, .c2 .right {
+    width: 50%;
+    padding: 120px 100px;
+}
+
+.c2 .left td {
+    height: 150px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.c2 .left>table img {
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+    min-width: 200px;
+}
+
+.c2 .left>table tr:nth-child(even) {
+    text-align: right;
+}
+
+.c2 .right>table {
+    background: rgba(47, 255, 127, 0.777);
+}
+
+.c2 .right>table caption {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.c2 .right>table td {
+    border: 2px solid black;
+    height: 50px;
+    font-size: 25px;
+}
+
+.c2 .right>table td:first-child {
+    text-align: center;
+    width: 80px;
+}
+
+.c2 .right>table td:last-child {
+    text-indent: 10px;
+    width: 520;
+}
+
+/* C3 */
+
+.c3 {
+    background-color: lightgreen;
+}
+
+.c3>main>table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+}
+
+.c3 th, .c3 td {
+    padding: 5px;
+}
+
+.c3 th {
+    white-space: nowrap;
+}
+
+.c3 td {
+    color: green;
+}
+
+.c3 td:first-child, .t-left {
+    text-align: left;
+    white-space: nowrap;
+}

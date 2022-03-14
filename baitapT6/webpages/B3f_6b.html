@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../css/B3f_6.css">
+    <script language="javascript">
+        function KT_NamDL() {
+            var namdl = document.getElementById("th_namdl");
+            if (namdl.value == "") {
+                alert("Chưa nhập năm dương lịch.");
+                namdl.focus();
+                return false;
+            } else {
+                var kt = /([a-zA-Z])/;
+                if (kt.test(namdl.value)) {
+                    alert("Nhập năm dương lịch với ký tự số.");
+                    namdl.focus();
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+        function nam_am_lich() {
+            var ktdl = KT_NamDL();
+            if (ktdl) {
+                var Can = ['Canh', 'Tân', 'Nhâm', 'Quý', 'Giáp', 'Ất', 'Bính', 'Đinh', 'Mậu', 'Kỷ'];
+                var Chi = ['Thân', 'Dậu', 'Tuất', 'Hợi', 'Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tị', 'Ngọ', 'Mùi'];
+                var nam_dl, nam_al;
+                nam_dl = document.getElementById("th_namdl");
+                nam_al = Can[parseInt(nam_dl.value) % 10] + " " + Chi[parseInt(nam_dl.value) % 12];
+                // namal = can[2021 % 10] + chi[2021 % 12]
+                //namal = 			can [1] 	+ 	chi[5] 
+                //namal = 		Tân   +		Sửu
+                //ghi kết quả ra 
+                var kq = document.getElementById("th_namal");
+                kq.value = nam_al;
+            }
+        }
+    </script>
+</head>
+
+<body class="f2">
+    <header>
+        <a href="../B3_TH.html">Trở về trang trước</a>
+    </header>
+    <form class="pos-cen">
+        <h3>XEM NĂM ÂM LỊCH</h3>
+        <div>
+            <span>Dương lịch:</span>
+            <input type="text" id="th_namdl">
+        </div>
+        <div>
+            <span>Âm lịch:</span>
+            <input type="text" id="th_namal">
+        </div>
+
+        <div class="button">
+            <button type="button" onclick="nam_am_lich()">Xem</button>
+            <button type="reset">Làm lại</button>
+        </div>
+    </form>
+
+
+</body>

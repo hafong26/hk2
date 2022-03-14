@@ -1,0 +1,326 @@
+@import url(style.css);
+/* b5 */
+
+:root {
+    --bg-color: #bff;
+    --text-color: #00f;
+    --text-color2: #f00;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url(../images/bg-flower.jpg);
+    background-position: right;
+}
+
+/* Unit */
+
+header::before {
+    content: 'Bài 3.2: Định dạng văn bản bằng css';
+    color: yellow;
+}
+
+li>div {
+    display: flex;
+    width: 100%;
+    margin: 70px auto;
+    justify-content: center;
+    min-width: 700px;
+}
+
+li>div>div {
+    width: 250px;
+    height: 150px;
+    margin: 0 20px;
+}
+
+/* B1 */
+
+.b1 .pic1 {
+    border-radius: 20px;
+}
+
+.b1 .pic2 {
+    border-radius: 50%;
+}
+
+.b1 .pic3 {
+    border: 1px solid yellow;
+    padding: 15px;
+}
+
+.b1 .pic4 {
+    opacity: 0.1;
+}
+
+.b1 .pic5 {
+    opacity: 0.3;
+}
+
+.b1 .pic6 {
+    opacity: 0.6;
+}
+
+.b1 .pic7 {
+    opacity: 1;
+}
+
+/* B2 */
+
+.b2 .pic1 {
+    filter: none;
+}
+
+.b2 .pic2 {
+    filter: contrast(200%);
+}
+
+.b2 .pic3 {
+    filter: opacity(50%);
+}
+
+.b2 .pic4 {
+    filter: grayscale(100%);
+}
+
+.b2 .pic5 {
+    filter: invert(100%);
+}
+
+.b2 .pic6 {
+    filter: hue-rotate(180deg);
+}
+
+.b2 .pic7 {
+    filter: none;
+}
+
+.b2 .pic8 {
+    filter: opacity(50%);
+}
+
+.b2 .pic9 {
+    filter: sepia(100%);
+}
+
+.b2 .pic10 {
+    filter: saturate(7);
+}
+
+.b2 .pic11 {
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+/* B3 */
+
+.b3 .khung {
+    justify-content: center;
+    display: flex;
+}
+
+.b3 .khung p {
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.b3 .chia1 {
+    width: 60%;
+    padding: 20px;
+    min-width: 800px;
+}
+
+.b3 .chia2 {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.b3 .chia6 {
+    border: 2px solid rgba(255, 255, 0, 0.25);
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+}
+
+.b3 .chia6:hover img {
+    transform: rotateY(180deg);
+}
+
+.b3 .chia6 p {
+    background: rgba(255, 255, 0, 0.25);
+    letter-spacing: 2px;
+    height: 10%;
+}
+
+.b3 .chia6>div {
+    height: 90%;
+}
+
+/* B4 */
+
+.b4 .dacsan {
+    justify-content: center;
+    display: flex;
+}
+
+.b4 .dacsan span {
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+    min-width: 300px;
+    width: 25%;
+    margin: 20px;
+}
+
+.b4 .khung {
+    padding: 20px 5px;
+    text-indent: 15px;
+}
+
+.b4 .khung {
+    border-left: 1px solid black;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0));
+}
+
+.b4 .khung li {
+    border-left: 1px solid black;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.666), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    padding: 2px;
+}
+
+.b4 .khung li:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.333), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.b4 .khung span:hover {
+    cursor: pointer;
+    color: .333;
+}
+
+.b4 li {
+    margin: 10px 0;
+}
+
+/* B5 */
+
+.b5 {
+    background: white;
+}
+
+.b5 .app {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    font-size: 25px;
+    min-width: 800px;
+    position: relative;
+}
+
+.b5 .header {
+    height: 150px;
+    background: var(--bg-color);
+}
+
+.b5 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    margin: 0 100px;
+    min-width: 635px;
+}
+
+.b5 .logo {
+    width: 200px;
+    height: 80%;
+}
+
+.b5 .logo img {
+    border-radius: 50%;
+}
+
+.b5 .name {
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 20px var(--text-color);
+}
+
+.b5 .main {
+    padding: 10px;
+}
+
+.b5 .list-items li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.b5 .list-items a {
+    display: block;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: arial;
+}
+
+.b5 .list-items a:hover {
+    box-shadow: 0 0 5px var(--text-color);
+}
+
+.b5 .info>h2 {
+    color: var(--text-color);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.b5 .info>p {
+    font-size: 23px;
+    margin: 22px 0;
+}
+
+.b5 .info>p>span {
+    color: var(--text-color2);
+    letter-spacing: 5px;
+}
+
+.b5 .info>p>span:before, .b5 .info>p>span:after {
+    content: '..........................';
+    letter-spacing: normal;
+}
+
+.b5 .back {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--bg-color));
+    display: block;
+    padding: 20px;
+    text-align: right;
+    margin: 20px 0;
+    position: absolute;
+    width: 60%;
+    right: 0;
+    min-width: 500px;
+}
+
+.b5 .back:hover {
+    color: red;
+}
+
+.b5 .footer {
+    background: var(--bg-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.b5 .footer>p>span {
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.b5 hr {
+    margin: 15px 0;
+}

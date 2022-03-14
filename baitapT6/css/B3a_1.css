@@ -1,0 +1,91 @@
+@import url(style.css);
+body {
+    background: url(../images/background1.jpg);
+    background-size: cover;
+}
+
+h3 {
+    color: blue;
+}
+
+/* Unit */
+
+header::before {
+    content: 'Bài 3.1:Định dạng văn bản bằng css';
+    color: blue;
+}
+
+/* A1 */
+
+.a1 ol li {
+    margin: 10px 0;
+}
+
+.a1 .khung {
+    border: 2px solid blue;
+    padding: 20px;
+    margin-left: 20px;
+    max-width: max-content;
+    width: 80%;
+}
+
+.a1 .khung .green {
+    font-size: 27px;
+}
+
+/* A2 */
+
+.a2 .elip {
+    border: 2px solid blue;
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: url(../images/background.jpg);
+}
+
+.a2 .khung {
+    border: 2px solid blue;
+    text-align: center;
+    font-style: italic;
+    margin: 25px;
+    padding: 10 0;
+    border-radius: 10px;
+    background: url(../images/background.jpg)
+}
+
+/* A3 */
+
+.a3 .card {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 255, 0.4));
+    color: white;
+    text-align: right;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 25px;
+    letter-spacing: 10px;
+}
+
+.a3 .khung {
+    border: 2px solid blue;
+    margin: 25px;
+    padding: 25px;
+}
+
+.a3 .khung3plus {
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 0, 0));
+    padding: 20 50;
+    line-height: 50px;
+}
+
+.a3 .hoahoc {
+    color: blue;
+    font-family: Arial;
+}
+
+.a3 .monhoc {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
