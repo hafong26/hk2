@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Quần Áo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            user-select: none;
+
+        }
+
+        body {
+            background: #eee;
+        }
+
+        .container {
+            margin: auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .logo-and-slogan>.container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .logo {
+            padding: 1em;
+        }
+
+        .logo img {
+            width: 200px;
+            mix-blend-mode: darken;
+        }
+
+        .slogan {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            gap: 10px;
+        }
+
+        .slogan :nth-child(1) {
+            font-size: 28px;
+        }
+
+        .slogan hr {
+            border-bottom: 2px solid #bd8856;
+        }
+
+        .navbar {
+            padding: 5px;
+            background: white;
+        }
+
+        .navbar>ul {
+            text-align: right;
+        }
+
+        .navbar>ul>li {
+            display: inline-block;
+        }
+
+        .navbar>ul>li>a {
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            min-width: 150px;
+            padding: .75em;
+            text-align: center;
+            color: black;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: #a5672c;
+            color: white;
+        }
+
+
+        main>.container {
+            display: flex;
+            margin: 20px auto;
+        }
+
+        main .col {
+            flex: 1;
+            margin: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .col:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            background: #f8f8f8;
+            animation: load 2s .5s forwards;
+        }
+
+        @keyframes load {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        .img {
+            border: thick solid white;
+        }
+
+        .img:nth-child(odd) {
+            border-bottom: none;
+        }
+
+        .img:nth-child(even) {
+            border-top: none;
+        }
+
+        .img>img {
+            height: 450px;
+            vertical-align: middle;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .col>span {
+            display: block;
+            font-size: 24px;
+            padding: .75em;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            background: #bd8856;
+            color: white;
+            position: relative;
+            z-index: 3;
+            border: thick solid white;
+        }
+
+        .col>span:nth-child(odd) {
+            text-align: right;
+        }
+
+        .col>span:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: white;
+            transform: rotate(45deg);
+        }
+
+        .col>span:nth-child(odd)::after {
+            top: 80%;
+            left: 10%;
+        }
+
+        .col>span:nth-child(even)::after {
+            bottom: 80%;
+            right: 10%;
+        }
+
+        .footer {
+            background: white;
+        }
+
+        .footer>.container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: 15px;
+            padding: 1em;
+        }
+
+        .footer i {
+            color: black;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-and-slogan">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.jpg" alt="">
+                </div>
+                <div class="slogan">
+                    <span>Một câu thôi!</span>
+                    <hr>
+                    <span>Khách hàng là thuợng đế</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="navbar">
+        <ul class="container">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="col">
+                <span>Mới ra lò</span>
+                <div class="img">
+                    <img src="shopquanao.jpg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="img">
+                    <img src="shopquanao.jpg" alt="">
+                </div>
+
+                <span>Mới ra lò</span>
+            </div>
+            <div class="col">
+                <span>Mới ra lò</span>
+                <div class="img">
+                    <img src="shopquanao.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="img">
+                    <img src="shopquanao.jpg" alt="">
+                </div>
+
+                <span>Mới ra lò</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>© Last updated: 12.11.2023 by Nguyễn Văn Hào</h4>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);">
+                    <path
+                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);">
+                    <path
+                        d="M12 3c-4.92 0-8.91 3.729-8.91 8.332 0 2.616 1.291 4.952 3.311 6.479V21l3.041-1.687c.811.228 1.668.35 2.559.35 4.92 0 8.91-3.73 8.91-8.331C20.91 6.729 16.92 3 12 3zm.938 11.172-2.305-2.394-4.438 2.454 4.865-5.163 2.305 2.395 4.439-2.455-4.866 5.163z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
